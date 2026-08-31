@@ -1,208 +1,235 @@
 <!DOCTYPE HTML>
- <html>
- 
-   <head>
-    <title> API TUTORIAL   </title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
-      <link rel="stylesheet" href="css/container.css">
-      <link rel="stylesheet" href="css/card.css">
-      <link rel="stylesheet" href="css/style.css">
-   </head>
-   <body>
-  <h2> CHAPTER 5  </H2>
+<html>
+	
+	<head>
+		<title> API TUTORIAL   </title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
+		<link rel="stylesheet" href="css/container.css">
+		<link rel="stylesheet" href="css/card.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h2> CHAPTER 5  </H2>
 		<h1>API TUTORIAL</h1>
 		<p>  <a href="day-3.html">Day 3</a></p>
 		
 		<button id="describe-button" type="button"> API REVIEW </button>
-   
-     <main>
-	 <section class="card">
-  <h2>Step 1 — The URL is the request</h2>
-  <img src="images css/raw-json.png" alt="The dog.ceo response as one unbroken line of raw text">
-  <img src="images css/pretty-json.png" alt="The same response laid out on separate lines by the browser's JSON viewer">
-  <p>I went on the website dog.ceo to get json data.  I had a raw version of the code and also indented for a pretty print.  I took screenshots of the differences.  This image is a result of the link. </p>
-  <pre><code>{
-  
-}</code></pre>
-</section>
-<section class="card">
-  <h2>A menu that arrived already laid out</h2>
-  <img src="images css/postman-coffee-menu.png" alt="Postman showing a GET to the coffee shop menu address with a 200 status and a response body that is already indented">
-  <p>What I did: … What I saw: …</p>
-  <pre><code>[
-   [
-    {
-        "name": "Espresso",
-        "price": 10,
-        "recipe": [
-            {
-                "name": "espresso",
-                "quantity": 30
-            }
-        ]
-    },
-    {
-        "name": "Espresso Macchiato",
-        "price": 12,
-        "recipe": [
-            {
-                "name": "espresso",
-                "quantity": 30
-            },
-            {
-                "name": "milk foam",
-                "quantity": 15
-            }
-        ]
-    },
-    {
-        "name": "Cappuccino",
-        "price": 19,
-        "recipe": [
-            {
-                "name": "espresso",
-                "quantity": 30
-            },
-            {
-                "name": "steamed milk",
-                "quantity": 20
-            },
-            {
-                "name": "milk foam",
-                "quantity": 50
-            }
-        ]
-    },
-    {
-        "name": "Mocha",
-        "price": 8,
-        "recipe": [
-            {
-                "name": "espresso",
-                "quantity": 30
-            },
-            {
-                "name": "chocolate syrup",
-                "quantity": 20
-            },
-            {
-                "name": "steamed milk",
-                "quantity": 25
-            },
-            {
-                "name": "whipped cream",
-                "quantity": 25
-            }
-        ]
-    },
-    {
-        "name": "Flat White",
-        "price": 18,
-        "recipe": [
-            {
-                "name": "espresso",
-                "quantity": 30
-            },
-            {
-                "name": "steamed milk",
-                "quantity": 50
-            }
-        ]
-    },
-    {
-        "name": "Americano",
-        "price": 7,
-        "recipe": [
-            {
-                "name": "espresso",
-                "quantity": 30
-            },
-            {
-                "name": "water",
-                "quantity": 70
-            }
-        ]
-    },
-    {
-        "name": "Cafe Latte",
-        "price": 16,
-        "recipe": [
-            {
-                "name": "espresso",
-                "quantity": 30
-            },
-            {
-                "name": "steamed milk",
-                "quantity": 50
-            },
-            {
-                "name": "milk foam",
-                "quantity": 20
-            }
-        ]
-    },
-    {
-        "name": "Espresso Con Panna",
-        "price": 14,
-        "recipe": [
-            {
-                "name": "espresso",
-                "quantity": 30
-            },
-            {
-                "name": "whipped cream",
-                "quantity": 15
-            }
-        ]
-    },
-    {
-        "name": "Cafe Breve",
-        "price": 15,
-        "recipe": [
-            {
-                "name": "espresso",
-                "quantity": 25
-            },
-            {
-                "name": "steamed milk",
-                "quantity": 30
-            },
-            {
-                "name": "steamed cream",
-                "quantity": 30
-            },
-            {
-                "name": "milk foam",
-                "quantity": 15
-            }
-        ]
-    },
-    {
-        "name": "(Discounted) Mocha",
-        "price": 4,
-        "discounted": true,
-        "recipe": [
-            {
-                "name": "espresso",
-                "quantity": 30
-            },
-            {
-                "name": "chocolate syrup",
-                "quantity": 20
-            },
-            {
-                "name": "steamed milk",
-                "quantity": 25
-            },
-            {
-                "name": "whipped cream",
-                "quantity": 25
-            }
-        ]
-    }
-]
-
-]</code></pre>
-     </main>
-   </body>
-</html
+		
+		<main>
+			<section class="card">
+				<h2>Step 1 — The URL is the request</h2>
+				<p> Raw-json..</p>
+				<img src="images css/raw-json.png" alt="The dog.ceo response as one unbroken line of raw text">
+				<p> Pretty-json..</p>
+				<img src="images css/pretty-json.png" alt="The same response laid out on separate lines by the browser's JSON viewer">
+				<p>I went on the website dog.ceo to get json data.  I had a raw version of the code and also indented for a pretty print.  I took screenshots of the differences.  This image is a result of the link. </p>
+				<pre><code>
+						<img src="images css/dog-image.jpg" alt="dog photo">	
+				</code></pre>
+			</section>
+			
+			<section class="card">
+				<h2>Step 2 — Limit Value</h2>
+				<p> Before (limit 1).. </p>
+				<img src="images css/postman-before-day2.png" alt="cats before">
+				<p> After (limit 10).. </p>
+				<img src="images css/postman-after-day2.png" alt="cats after">
+				<p>I put in the URL on postman and the limit was equal to 1 origianlly.  I only recieved 1 JSON on Postman.  I then put in a value of 10 for the paramater limit and I recived a list of 10 new breeds in JSON.  </p>
+					
+					
+			</section>
+			
+			<section class="card">
+				<h2>Step 3 — API-Key/Import</h2>
+				<p>  Missing x-api-key.. </p>
+				<img src="images css/postman-missing-apikey.png" alt="missing api-key">
+				<p> Included secret x-api-key.. </p>
+				<img src="images css/included-secret-apikey.png" alt="included api-key">
+				<p>The first part of the lesson I learned about headers on Postman.  I tried to do the same thing by adding just the URL to get the JSON, but I was told that I was missing an api-key.  I then went to api ninja where I was able to get my own personal api key and submit it on Postman.  I was then able to find the JSON for the website. </p>
+				
+			</section>
+			
+			
+			
+			<section class="card">
+				<h2>A menu that arrived already laid out</h2>
+				<p> Postman Partial Coffee Menu </p>
+				<img src="images css/postman-coffee-menu.png" alt="Postman showing a GET to the coffee shop menu address with a 200 status and a response body that is already indented">
+				<p> The first picture shows a partial coffee menu of the coffee app's JSON.  I later added the full code JSON to show everything included in the body on POSTMAN.</p>
+				<pre><code>[
+					[
+					{
+					"name": "Espresso",
+					"price": 10,
+					"recipe": [
+					{
+					"name": "espresso",
+					"quantity": 30
+					}
+					]
+					},
+					{
+					"name": "Espresso Macchiato",
+					"price": 12,
+					"recipe": [
+					{
+					"name": "espresso",
+					"quantity": 30
+					},
+					{
+					"name": "milk foam",
+					"quantity": 15
+					}
+					]
+					},
+					{
+					"name": "Cappuccino",
+					"price": 19,
+					"recipe": [
+					{
+					"name": "espresso",
+					"quantity": 30
+					},
+					{
+					"name": "steamed milk",
+					"quantity": 20
+					},
+					{
+					"name": "milk foam",
+					"quantity": 50
+					}
+					]
+					},
+					{
+					"name": "Mocha",
+					"price": 8,
+					"recipe": [
+					{
+					"name": "espresso",
+					"quantity": 30
+					},
+					{
+					"name": "chocolate syrup",
+					"quantity": 20
+					},
+					{
+					"name": "steamed milk",
+					"quantity": 25
+					},
+					{
+					"name": "whipped cream",
+					"quantity": 25
+					}
+					]
+					},
+					{
+					"name": "Flat White",
+					"price": 18,
+					"recipe": [
+					{
+					"name": "espresso",
+					"quantity": 30
+					},
+					{
+					"name": "steamed milk",
+					"quantity": 50
+					}
+					]
+					},
+					{
+					"name": "Americano",
+					"price": 7,
+					"recipe": [
+					{
+					"name": "espresso",
+					"quantity": 30
+					},
+					{
+					"name": "water",
+					"quantity": 70
+					}
+					]
+					},
+					{
+					"name": "Cafe Latte",
+					"price": 16,
+					"recipe": [
+					{
+					"name": "espresso",
+					"quantity": 30
+					},
+					{
+					"name": "steamed milk",
+					"quantity": 50
+					},
+					{
+					"name": "milk foam",
+					"quantity": 20
+					}
+					]
+					},
+					{
+					"name": "Espresso Con Panna",
+					"price": 14,
+					"recipe": [
+					{
+					"name": "espresso",
+					"quantity": 30
+					},
+					{
+					"name": "whipped cream",
+					"quantity": 15
+					}
+					]
+					},
+					{
+					"name": "Cafe Breve",
+					"price": 15,
+					"recipe": [
+					{
+					"name": "espresso",
+					"quantity": 25
+					},
+					{
+					"name": "steamed milk",
+					"quantity": 30
+					},
+					{
+					"name": "steamed cream",
+					"quantity": 30
+					},
+					{
+					"name": "milk foam",
+					"quantity": 15
+					}
+					]
+					},
+					{
+					"name": "(Discounted) Mocha",
+					"price": 4,
+					"discounted": true,
+					"recipe": [
+					{
+					"name": "espresso",
+					"quantity": 30
+					},
+					{
+					"name": "chocolate syrup",
+					"quantity": 20
+					},
+					{
+					"name": "steamed milk",
+					"quantity": 25
+					},
+					{
+					"name": "whipped cream",
+					"quantity": 25
+					}
+					]
+					}
+					]
+					
+				]</code></pre>
+			</main>
+		</body>
+	</html	
